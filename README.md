@@ -1,16 +1,33 @@
 # Hello Git
 
+```bash
+# merge conflicts
+
+# 测试，这是在master分支
+# 测试在readme-re的提交!
+# 测试，解决冲突
+# 测试解决merge冲突
 ```
-merge conflicts
 
-测试，这是在master分支
-测试在readme-re的提交!
-测试，解决冲突
+
+
+简单的常用指令
+
+```bash
+git status	# 查看当前文件状态
+git branch	# 查看分支情况
+git branch new-branch	# 创建新分支
+git switch branch-name	# 切换到该分支
+git switch -c new-branch	# 创建并切换到该分支
+git add	filename	# 将文件提价到缓存区
+git add -A		# 将所有更新的文件添加
+git commit		# 将缓存区的文件提交到分支上
+git commit -m "a commit message" # 同上，不过直接指定message内容为""内内容
 ```
 
 
 
-## 再本地提交树上移动
+## 在本地提交树上移动
 
 ### HEAD分离
 
@@ -216,7 +233,7 @@ git fetch 是直接从远程回去最新更新，而本地没有
 
 ```bash
 git fetch
-git rebase o/main
+git rebase --o/main
 # 前两行等同于git pull --rebase
 git push
 ```
